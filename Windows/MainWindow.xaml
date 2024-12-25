@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="260" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="buttonAddWeather" Content="Добавить погоду" HorizontalAlignment="Center" Margin="0,71,0,0" VerticalAlignment="Top" Height="64" Width="156" Click="buttonAddWeather_Click"/>
+        <Button x:Name="buttonShowWeather" Content="Посмотреть погоду" HorizontalAlignment="Center" Margin="0,187,0,0" VerticalAlignment="Top" Height="64" Width="156" Click="buttonShowWeather_Click"/>
+    </Grid>
+</Window>

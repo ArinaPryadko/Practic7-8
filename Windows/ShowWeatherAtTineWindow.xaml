@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp2.Windows.ShowWeatherAtTineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Windows"
+        mc:Ignorable="d"
+        Title="ShowWeatherAtTimeWindow" Height="265" Width="568" MinHeight="260" MinWidth="285"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="labelContent" HorizontalContentAlignment="Center" Content="Просмотр погоды" Margin="0,9,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer Margin="0,40,0,0" VerticalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="wrapPanelWeather" Height="Auto" Width="Auto"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

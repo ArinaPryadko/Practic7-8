@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.Windows.ShowWeatherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Windows"
+        mc:Ignorable="d"
+        Title="ShowWeather" Height="450" Width="800" MinWidth="570" MinHeight="300"    
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="labelContent" HorizontalContentAlignment="Center" Content="Просмотр всей погоды" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="buttonBack" Content="Назад" VerticalAlignment="Top" Height="32" Click="buttonBack_Click" Margin="28,14,0,0" HorizontalAlignment="Left" Width="95"/>
+        <ScrollViewer Margin="0,60,0,0" VerticalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="wrapPanelWeather" Height="Auto" Width="Auto"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
